@@ -89,13 +89,13 @@ function App() {
         <div className="flex flex-col justify-center items-center gap-6 mt-6">
         <h2 className="font-semibold text-lg text-center text-black underline underline-offset-4"> Line Chart For Price (SOL)</h2>
           {/* Price Chart */}
-          <div className="w-full max-w-4xl p-4 border rounded shadow-sm bg-[#0f1824]">
-            <PriceChart labels={timestamps} data={prices} />
-          </div>
+          <div className="w-full max-w-4xl p-4 border rounded shadow-sm bg-[#0f1824] h-64 sm:h-96">
+  <PriceChart labels={timestamps} data={prices} />
+</div>
           
           {/* RSI Chart */}
           <h2 className="font-semibold text-lg text-center text-black underline underline-offset-4"> Line Chart For RSI</h2>
-          <div className="w-full max-w-4xl p-4 border rounded shadow-sm bg-[#0f1824]">
+          <div className="w-full max-w-4xl p-4 border rounded shadow-sm bg-[#0f1824] h-64 sm:h-96">
             <RsiChart labels={timestamps} data={rsi} step={2} />
 
           </div>

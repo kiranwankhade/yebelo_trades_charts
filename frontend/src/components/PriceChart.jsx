@@ -40,6 +40,7 @@ export default function PriceChart({ labels, data, step = 2 }) {
 
   const options = {
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         position: "top",

@@ -57,6 +57,7 @@ export default function RsiChart({ labels, data, step = 2 }) {
 
   const options = {
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         position: "top",
