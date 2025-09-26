@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const API = "http://localhost:4000/api";
+// Local API :http://localhost:4000/api
+
+const API = "https://yebelo-trades-charts-1.onrender.com/api"; 
 
 // /api/trades
 export const fetchTrades = () => axios.get(`${API}/trades`).then(r => r.data);
