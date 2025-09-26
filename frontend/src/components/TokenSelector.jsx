@@ -2,8 +2,10 @@ import React from "react";
 
 export default function TokenSelector({ tokens, selected, onChange }) {
   return (
-    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3 w-full max-w-sm">
-      <label className="font-medium text-[#616175] mb-1 sm:mb-0">Select Token:</label>
+    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3 w-full max-w-md">
+      <label className="font-bold text-[#616175] sm:whitespace-nowrap">
+        Select Token:
+      </label>
       <select
         className="border rounded p-2 w-full sm:w-auto"
         value={selected}
