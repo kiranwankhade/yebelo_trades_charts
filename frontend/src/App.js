@@ -87,17 +87,32 @@ function App() {
 
         {/* Charts */}
         <div className="flex flex-col justify-center items-center gap-6 mt-6">
-        <h2 className="font-semibold text-lg text-center text-black underline underline-offset-4"> Line Chart For Price (SOL)</h2>
+          <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center w-full max-w-4xl">
+            <h2 className="font-semibold text-lg text-black underline underline-offset-4">
+              Line Chart For Price (SOL)
+            </h2>
+            <h2 className="font-semibold text-lg text-black mt-2 sm:mt-0">
+              Latest Price : {latestPrice} SOL
+            </h2>
+          </div>
           {/* Price Chart */}
           <div className="w-full max-w-4xl p-4 border rounded shadow-sm bg-[#0f1824] h-64 sm:h-96">
-  <PriceChart labels={timestamps} data={prices} />
-</div>
-          
+            <PriceChart labels={timestamps} data={prices} />
+          </div>
+
           {/* RSI Chart */}
-          <h2 className="font-semibold text-lg text-center text-black underline underline-offset-4"> Line Chart For RSI</h2>
+          <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center w-full max-w-4xl">
+          <h2 className="font-semibold text-lg text-center text-black underline underline-offset-4">
+            {" "}
+            Line Chart For RSI
+          </h2>
+            <h2 className="font-semibold text-lg text-black mt-2 sm:mt-0">
+              Latest RSI : {latestRsi?.toFixed(2)}
+            </h2>
+          </div>
+         
           <div className="w-full max-w-4xl p-4 border rounded shadow-sm bg-[#0f1824] h-64 sm:h-96">
             <RsiChart labels={timestamps} data={rsi} step={2} />
-
           </div>
         </div>
       </div>
