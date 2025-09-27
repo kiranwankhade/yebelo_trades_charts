@@ -115,6 +115,8 @@ Frontend runs on: **[http://localhost:3000](http://localhost:3000)**
 ## 📹 Submission
 
 * GitHub repo link: `https://github.com/kiranwankhade/yebelo_trades_charts`
+* Backend Deployment: `https://yebelo-backend.onrender.com`
+* Frontend Deployment: `https://yebelo-frontend.vercel.app`
 * Demo video: Attached separately
 
 ---
